@@ -1,0 +1,34 @@
+
+
+#page-title{
+	font-size: 24;
+	font-family: Verdana Arial;
+	color: #800000;
+	text-align:center;
+}
+
+.image-div {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	max-width:100%;
+	height:auto;
+}
+
+.image {
+	max-width:100%;
+	height:auto;
+}
+
+
+.article-title{
+	font-size: 20;
+	text-align:center;
+	color:#404040;
+}
+
+
+
+
+
