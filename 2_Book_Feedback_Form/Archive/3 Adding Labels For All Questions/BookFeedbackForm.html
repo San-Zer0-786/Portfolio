@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+
+<head> 
+
+<link rel="stylesheet" type="text/css" href="BookFeedbackForm.css">
+
+</head>
+
+<body>
+
+<h1 id="title> Feedback Form </h1>
+
+<p id="description"> 
+
+Please provide feedback to help me write a sequel! 
+
+</p>
+
+<div id="form-text">
+
+<form id="survey-form">
+
+<label for="name" class="labels" id="name-label"> Full Name: <br> </label>
+
+<input name="name" type="text" id="name" placeholder="Write Your Name Here" required>
+
+
+<br>
+
+<label for="email" class="labels" id="email-label"> Email Address: <br> </labels>
+
+<input name="email" type="email" id="email" placeholder="Write Your Email Here" required>
+
+<br>
+
+<label for="age" class="labels" id="number-label">What is your age in years?<br> </label>
+
+<input name="age" type="number" id="number" placeholder="Enter your age" required>
+
+
+<br>
+
+<label for="score" class="labels" id="score-label"> What score would you give the book? </label> <br>
+
+<select name="score" id="dropdown">
+	<option type="radio">1</option>
+	<option type="radio">2</option>
+	<option type="radio">3</option>
+	<option type="radio">4</option>
+	<option type="radio">5</option>
+	<option type="radio">6</option>
+	<option type="radio">7</option>
+	<option type="radio">8</option>
+	<option type="radio">9</option>
+	<option type="radio">10</option>
+</select>
+<br>
+
+<label for="additionalComments" class="labels"> Is there any other feedback you would like to give? <br> </label>
+
+	<textarea name="additionalComments" type="text" placeholder="Please write anything else here..." rows=3 col=5></textarea>
+
+<br>
+<button type="submit" id="submit"> Submit Feedback </button>
+
+</div>
+
+</form>
+
+
+</body>
+
+</html>

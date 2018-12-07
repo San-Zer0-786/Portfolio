@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+
+<head> 
+
+<link rel="stylesheet" type="text/css" href="BookFeedbackForm.css">
+
+</head>
+
+<body>
+
+<h1 id="title"> Feedback Form </h1>
+
+<p id="description"> 
+
+Please provide feedback to help me write a sequel :)
+
+</p>
+
+<div id="form-text">
+
+<form id="survey-form">
+
+<label for="name" class="labels" id="name-label"> Full Name: <br> </label>
+
+<input name="name" type="text" id="name" placeholder="Write Your Name Here" required>
+
+
+<br>
+
+<label for="email" class="labels" id="email-label"> Email Address: <br> </labels>
+
+<input name="email" type="email" id="email" placeholder="Write Your Email Here" required>
+
+<br>
+<br>
+
+<label for="age" class="labels" id="number-label">How old are you?</label>
+
+<input name="age" type="number" id="number" min="1" max="120" placeholder="Age?" required>
+
+<br>
+
+<br>
+<label for="bookCharacters" class="labels"> Who is your favourite character?<br> </label>
+
+
+<label for="Mario" class="labels"> 
+<input type="radio" name="bookCharacters" id="Mario"> Mario 
+</label>
+
+<label for="MasterChef class="labels">
+<input type="radio" name="bookCharacters" id="MasterChef">Master Chef
+</label>
+
+<label for="Drake" class="labels">
+<input type="radio" name="bookCharacters" id="Drake">Drake
+</label>
+
+<label for="Sanic" class="labels">
+<input type="radio" name="bookCharacters" id="Sanic">Sanic
+</label>
+
+<label for="Pickachu" class="labels">
+<input type="radio" name="bookCharacters" id="Pickachu">Pickachu
+</label>
+
+<label for="IDK" class="labels">
+<input type="radio" name="bookCharacters" id="IDK">I can't decide!
+</label>
+
+<br>
+
+<br>
+
+<label for="bestFeatures" class="labels"> What aspects of the book are the best? <br>
+</label>
+
+<label for="characters" class="labels">
+<input type="checkbox" id="characters" name="bestFeatures">
+Characters
+</label>
+
+<label for="story" class="labels">
+<input type="checkbox" id="story" name="bestFeatures">
+Story
+</label>
+
+<label for="themes" class="labels">
+<input type="checkbox" id="themes" name="bestFeatures">
+Themes
+</label>
+
+<label for="pacing/length" class="labels">
+<input type="checkbox" id="themes" name="bestFeatures">
+Pacing/Length
+</label>
+
+<label for="nothing" class="labels">
+<input type="checkbox" id="nothing" name="bestFeatures">
+Nothing
+</label> 
+
+<br>
+<br>
+
+
+<label for="dropdown" class="labels" id="score-label"> What score would you give the book? </label> 
+
+<select name="score" id="dropdown">
+	<option type="radio">1</option>
+	<option type="radio">2</option>
+	<option type="radio">3</option>
+	<option type="radio">4</option>
+	<option type="radio">5</option>
+	<option type="radio">6</option>
+	<option type="radio">7</option>
+	<option type="radio">8</option>
+	<option type="radio">9</option>
+	<option type="radio">10</option>
+</select>
+<br>
+<br>
+
+<label for="additionalComments" class="labels" > Is there any other feedback you would like to give? <br> </label>
+
+	<textarea name="additionalComments" type="text" placeholder="Please write anything else here..." rows=3 col=5></textarea>
+
+<br>
+<button type="submit" id="submit"> Submit Feedback </button>
+
+</div>
+
+</form>
+
+
+</body>
+
+</html>

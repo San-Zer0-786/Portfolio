@@ -1,0 +1,35 @@
+#title {
+	color:cyan;
+	font-size:125%;
+	text-align:center;
+	padding:5px 5px 5px 5px;
+	font-family: Arial;
+}
+
+body {
+	background-color: grey;
+	background-size:cover;
+	font-family: sans-serif;
+}
+
+#description {
+	text-align:center;
+	margin: 0px auto;
+	padding:10px;
+}
+
+
+
+#survey-form {
+	background-color:#eaedf2;
+	margin:0px auto;
+	padding:10px;
+	text-align:center;
+	margin: 0px auto;
+	border-radius:10px;
+	
+}
+
+.labels{
+
+}
