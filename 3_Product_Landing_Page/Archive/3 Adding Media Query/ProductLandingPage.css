@@ -1,0 +1,53 @@
+
+
+@media ( min-width: 768px) {
+
+font-size:14em;
+
+font-family:Verdana, Arial;
+
+ 
+
+}
+
+ 
+
+@media (max-height: 480px max-width: 320px) {
+
+font-size:100%;
+
+color:sky-blue;
+
+font-family: Verdana, Arial;
+
+}
+
+ 
+
+#nav-bar {
+
+position: fixed;
+
+top:0px;
+
+width:100%;
+
+}
+
+ 
+
+#header {
+
+display: block;
+
+}
+
+ 
+
+#form {
+
+display: block;
+
+}
+
+ 
