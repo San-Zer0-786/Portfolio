@@ -1,0 +1,58 @@
+  
+  
+  #navbar: {
+  padding: 0 40px;
+  line-height:100px;
+  display: block;
+  height: 100vh;
+  position:fixed;
+  width: 100%;  
+  }
+  
+  #navbar li {
+	  text-decoration:none;
+	  list-style:none;
+	  display:inline-block;
+	  border: 5px blue solid;
+	  text-align:center; 
+	  line-height:50px;
+	  background: cyan;
+  }
+  
+  nav ul li a {
+	  color: #008080;
+	  text-decoration: none;
+	}
+
+  nav ul li a:hover {
+	  color: green;
+	}
+  
+  body {
+	  text-align:center;
+  }
+  
+  #welcome-section {
+    height:100vh;
+	background: #e0ebe8;
+	font-family: Arial;
+	padding-top:120px;
+  }
+  
+  #projects {
+  color:#008080;
+  font-weight: normal;
+  font-family: Arial;
+  }
+  
+  .project-title {
+	  color: #22313F;
+  }
+  
+  @media only screen and (max-width:600px) {
+	  body {
+		  text-align:justify;
+		  display:flex;
+		  height:100vh;
+		  
+  }
