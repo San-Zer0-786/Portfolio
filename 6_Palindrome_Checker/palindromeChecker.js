@@ -6,7 +6,7 @@ function palindromeChecker (string) {
 	
 	// Now, string = "Race Car" => string = "race car" 
 	
-	var nonANString = lowerCaseString.replace(/[\W\s+]/ , '')
+	var nonANString = lowerCaseString.replace(/[\W\s+]/g , '')
 	
 	// This removes any non-alphanumerical characters and white space
 	// Therefore, string = "race car" => string = "racecar"
