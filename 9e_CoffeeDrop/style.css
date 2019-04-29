@@ -1,0 +1,266 @@
+/* If SASS was to be implemented 
+
+$bgcolor: #373737;
+$pricesHeading: #29e7a9;
+$boxColorOdd: #4e4e4e;
+$boxColorEven: #626262;
+
+then set 
+background: $bgcolor; 
+color: $pricesHeading; 
+etc. 
+
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300, 400");
+
+/* initialise background colour, font used , margin and padding */
+/* use overflow-x: hidden to prevent unwanted spacing on the right when viewing page on mobile viewports*/
+body,
+html {
+  background: #373737;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
+}
+
+/* make navbar transparent and remove any borders */
+.navbar {
+  background: transparent;
+  border: none;
+  transition: 0.5s;
+}
+
+/* position navbar items */
+.navbar ul li {
+  font-size: 24px;
+  right: 200px;
+}
+
+/* provide sufficent padding for each navbar item and set text colour to white */
+.nav.navbar-nav.navbar-right li a {
+  color: white;
+  opacity: 1;
+  padding: 40px;
+}
+
+/* ensure website logo is placed atop of background image by default */
+#coffeeDropLogo {
+  position: absolute;
+  top: 50px;
+  left: 15%;
+}
+
+/* position main background image to fit desktop browser size and prevent image from repeating itself*/
+
+#main {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  background: url(https://raw.githubusercontent.com/NiSofwareEngineer/CoffeeDropWebChallenge/master/Assets/images/shutterstock_326070713%402x.jpg)
+    no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* ensure Apple and Google Play Store logos are positioned correctly */
+/* set position to relative so child elements of container can be positioned relative to the parent */
+.container-cta {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* position main heading text */
+#main-heading {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translateY(-50%);
+  color: white;
+  z-index: 10;
+  margin-bottom: 20px;
+}
+
+/*add margin to the bottom of the subheading */
+#main-subheading {
+  color: white;
+  margin-bottom: 50px;
+}
+
+/* setting bottom: 0 ensures phone image is always just on top of the main background image */
+#phoneLogo {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+}
+
+/* ensure how it works section has background colour white and has sufficent padding */
+.howItWorks {
+  position: relative;
+  background: white;
+  padding: 90px;
+}
+
+/* position arrow images */
+#arrow1 {
+  position: absolute;
+  left: 38%;
+  top: 38%;
+}
+
+#arrow2 {
+  position: absolute;
+  left: 58%;
+  top: 38%;
+}
+
+#prices-heading {
+  background: #373737;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+}
+
+/* Style prices section so that each display as a list with each box having a colour scheme */
+.prices {
+  background: #373737;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-bottom: 150px;
+  padding-top: 20px;
+}
+
+/* Set child element's position to relative */
+.price {
+  position: relative;
+}
+
+/* Style and center text for each lists' three headings */
+.price h3 {
+  color: #29e7a9;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* style background color of each list, set width of the list and set padding */
+.price ul {
+  background: #4e4e4e;
+  padding: 0;
+  width: 420px;
+  border-radius: 4px;
+}
+
+/* ensure sufficent padding of the text inside each box,
+ remove bullet points from list and ensure font-size of text is sufficently large */
+
+.price ul li {
+  padding: 20px;
+  list-style: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  border-radius: 4px;
+}
+
+/* ensure second box of each list item is coloured differently to the first and third box */
+.price ul li:nth-child(2) {
+  background: #626262;
+}
+
+/* ensure coffee bean images are centered at the bottom of each box section*/
+.price img {
+  position: absolute;
+  left: 45%;
+  bottom: -3px;
+}
+
+/* provide spacing for Google Maps */
+#map {
+  height: 500px;
+}
+
+/* provide spacing and set background colour for footer section */
+#footer {
+  background: #373737;
+  height: 100px;
+}
+#footer p {
+  font-family: "Open sans", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+/* center image of coffee drop logo in the footer */
+#footer img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* fixes positioning of right hand side arrow */
+@media (max-width: 1400px) {
+  #arrow2 {
+    left: 70%;
+  }
+}
+
+@media (max-width: 1200px) {
+  /* ensures that the navbar items are not off-screen when navbar button is pressed for tablet viewports */
+
+  .navbar ul li {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    left: 0px;
+    padding: 0;
+  }
+
+  /* stop showing arrows when viewport is not large enough to have them */
+  #arrow1 {
+    display: none;
+  }
+
+  #arrow2 {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  /* ensures that the navbar items are not off-screen when navbar button is pressed for mobile phone viewports */
+
+  .navbar ul li {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    left: 0px;
+  }
+
+  #storeLogos {
+    display: block;
+  }
+
+  /* place heading higher for mobile phone viewports */
+  #main-heading {
+    position: absolute;
+    top: 45%;
+    left: 15%;
+  }
+
+  /* position text of each prices list to center so it is not off screen */
+
+  .prices {
+    text-align: center;
+  }
+
+  .price img {
+    bottom: -8px;
+  }
+
+  /* hide subheading for mobile phone viewports */
+
+  #main-subheading {
+    display: none;
+  }
+}

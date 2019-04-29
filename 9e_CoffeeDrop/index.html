@@ -1,0 +1,311 @@
+<html>
+  <head>
+    <!-- Get bootstrap and jQuery -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="style.css" rel="stylesheet" />
+
+    <Title>CoffeeDrop</Title>
+  </head>
+
+  <body>
+    <!-- Create a navbar splitting it up into divs which contain each navbar item -->
+
+    <div class="wrapper">
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <!-- Navbar will collapse into a button when screen of viewport is sufficently small-->
+
+            <button
+              type="button"
+              class="navbar-toggle"
+              data-toggle="collapse"
+              data-target="#navbar-collapse-main"
+            >
+              <span class="sr-only"> Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            <!-- Add navbar logo-->
+            <a class="navbar-brand" href="#">
+              <img
+                src="https://svgshare.com/i/CcG.svg"
+                title="CoffeeDrop Logo"
+                alt="CoffeeDrop Logo"
+              />
+            </a>
+          </div>
+
+          <!-- use bootstrap class collapse to toggle navbar to become a button when viewport is sufficently small -->
+
+          <div class="collapse navbar-collapse" id="navbar-collapse-main">
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a class="active" href="#">
+                  Login
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Download IOS App
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Download Android App
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Set up main section to contain heading, subheading, app store logos and phone image-->
+      <div id="main">
+        <div class="container container-cta">
+          <div id="main-heading">
+            <h2 style="font-weight:bold">
+              Recycle your <br />
+              Nespresso in Style!
+            </h2>
+            <br />
+            <p id="main-subheading">
+              We can recycle your coffee pods for <br />
+              cashback or free coffee!
+            </p>
+
+            <div id="storeLogos">
+              <img
+                src="https://raw.githubusercontent.com/NiSofwareEngineer/CoffeeDropWebChallenge/master/Assets/images/app-store.png"
+                title="Apple App Store Logo"
+                class="image-responsive"
+                alt="Apple App Store Logo"
+              />
+
+              <img
+                src="https://raw.githubusercontent.com/NiSofwareEngineer/CoffeeDropWebChallenge/master/Assets/images/google-play.png"
+                title="Google Play Store Logo"
+                class="image-responsive"
+                alt="Google Play Store Logo"
+              />
+            </div>
+          </div>
+
+          <img
+            id="phoneLogo"
+            class="image-responsive"
+            src="https://raw.githubusercontent.com/NiSofwareEngineer/CoffeeDropWebChallenge/master/Assets/images/app-mockup.png"
+            title="Phone logo"
+            alt="Phone logo"
+          />
+        </div>
+      </div>
+
+      <!-- Set up structure of 'How it works' section -->
+      <div class="howItWorks">
+        <div class="container">
+          <h3 class="text-center" style="font-weight: bold">How it works</h3>
+          <br />
+          <div class="row">
+            <!-- provide different bootstrap classes to handle different viewports ; dynamically change 12 column 
+            sections to fit the viewport -->
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-center">
+              <img
+                src="https://svgshare.com/i/Ceb.svg"
+                class="image-responsive"
+                alt="Coffee Machine Icon"
+              />
+              <p class="lead">
+                <br />
+                You can now save the planet in style, thanks to cashback for
+                your nespresso pods at any of our sixteen locations nationwide
+              </p>
+            </div>
+
+            <img
+              src="https://svgshare.com/i/ChE.svg"
+              class="image-responsive"
+              id="arrow1"
+              alt="arrow"
+            />
+
+            <img
+              src="https://svgshare.com/i/ChE.svg"
+              class="image-responsive"
+              id="arrow2"
+              alt="arrow"
+            />
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-center">
+              <img
+                src="https://svgshare.com/i/CdN.svg"
+                class="image-responsive"
+                alt="Coffee Bag Icon"
+              />
+              <p class="lead">
+                <br />
+                Simply bring in your used pods, place them in an approved
+                CoffeeDrop bag and bring them into store
+              </p>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-center">
+              <img
+                src="https://svgshare.com/i/Cd0.svg"
+                class="image-responsive"
+                alt="Person Icon"
+              />
+              <p class="lead">
+                <br />Our trained staff will quickly calculate your cashback -
+                or better still, you can do it yourself on our handy App
+                available on iOS or Android
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <!-- set up strucure of prices section-->
+      <h3 id="prices-heading">
+        Prices
+      </h3>
+
+      <!-- use an unordered list to display each heading regarding price-->
+      <div class="prices">
+        <div class="price">
+          <h3>The first 50 capsules:</h3>
+          <ul>
+            <li>Ristretto = 2p</li>
+            <li>Espresso = 4p</li>
+            <li>Lungo = 6p</li>
+          </ul>
+          <img src="https://svgshare.com/i/Cdj.svg" alt="coffee bean" />
+        </div>
+
+        <div class="price">
+          <h3>Capsules 50-500:</h3>
+          <ul>
+            <li>Ristetto = 3p</li>
+            <li>Espresso = 6p</li>
+            <li>Lungo = 9p</li>
+          </ul>
+          <img src="https://svgshare.com/i/Cdj.svg" alt="coffee bean" />
+        </div>
+
+        <div class="price">
+          <h3>Capsules 501+:</h3>
+          <ul>
+            <li>Ristretto = 5p</li>
+            <li>Espresso = 10p</li>
+            <li>Lungo = 15p</li>
+          </ul>
+          <img src="https://svgshare.com/i/Cdj.svg" alt="coffee bean" />
+        </div>
+      </div>
+
+      <!--have a section ready to hold Google Maps-->
+      <div id="map"></div>
+
+      <script>
+        /* have an array ready which will store objects which have longitude and latitude key value pairs*/
+        var locations = [];
+
+        /*set up a class that will catch errors in fetch */
+        class HttpError extends Error {
+          constructor(response) {
+            /* call the super i.e. Error classes' constructor; pass in response from HttpError's constructor */
+            super(`${response.status} for ${response.url}`);
+            this.name = "HttpError";
+            this.response = response;
+          }
+        }
+
+        function loadJson(url) {
+          return fetch(url).then(response => {
+            /* if HTML status code is unsuccessful i.e. less than 200 or at least 300, throw an 
+            error via class HttpError*/
+
+            if (response.status >= 200 && response.status < 300) {
+              /* for successful http status codes, return a promise parsing body text as JSON */
+              return response.json();
+            } else {
+              throw new HttpError(response);
+            }
+          });
+        }
+
+        /* GET request for coffeedrop API, if promise resolved run a .forEach function that will take coordinate pairs of 
+        longitude and latitude and push them into locations array. If promise rejected throw an error and alert user */
+
+        loadJson("http://coffeedrop.staging2.image-plus.co.uk/api/locations")
+          .then(json =>
+            json.data.forEach(location => {
+              locations.push(location.coordinates);
+            })
+          )
+          .catch(alert);
+
+        /* initialise map and determine it's center point */
+        function initMap() {
+          var center = {
+            lat: 54.4,
+            lng: -1.904775
+          };
+
+          /*jQuery: $("#map") can be used instead of document.getElementById("map"). Place Google Maps where id="map" */
+
+          var gMap = new google.maps.Map(document.getElementById("map"), {
+            zoom: 7,
+            center: center
+          });
+
+          /* iterate through each latitude and longitude pair in locations array then mark it on the map */
+
+          for (var i = 0; i < locations.length; i++) {
+            var marker = new google.maps.Marker({
+              position: {
+                lat: locations[i].latitude,
+                lng: locations[i].longitude
+              },
+              map: gMap,
+              icon: "https://svgshare.com/i/Cfx.svg"
+            });
+          }
+        }
+      </script>
+
+      <!-- use Google Maps API -->
+      <script
+        async
+        defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByavxe_EW7U1HrKbTnICly_bcMfi22L8g&callback=initMap"
+      ></script>
+
+      <!-- structure of footer; text followed by logo -->
+      <footer id="footer">
+        <br />
+        <p>This app is powered by</p>
+        <img
+          src="https://svgshare.com/i/Cgy.svg"
+          alt="Coffee Drop Footer Logo"
+        />
+      </footer>
+    </div>
+  </body>
+</html>
