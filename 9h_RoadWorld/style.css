@@ -1,0 +1,184 @@
+
+header {  
+    background-color:#282B28;
+    clear:both;
+}
+    
+    header > h1 {display:inline-block;
+    position:relative;
+    left:10%;
+    color:orange;
+    position:relative;
+    top:10px;
+    }
+    
+    header > input {display:inline-block;
+    position: relative;
+    left: 30%;
+    }
+    
+    header > button {display:inline-block;
+    position:relative;
+    left: 30%;} 
+    
+    header > a {display:inline-block;
+    position:relative;
+    color:white;
+    left: 31%;}
+    
+    header > a:hover {
+      text-decoration:none;
+    }
+    
+    header #basketButton {
+      position:relative;
+      left:35%;
+      background-color: #fff;
+    }
+    
+    header #basketButton:hover { 
+      background-color: lightgreen;
+    }
+    
+    .collapse ul {
+      position:relative;
+      left:10%;
+    }
+    
+    #discoverNow {
+      width:100%;
+    }
+    
+    .banner.container-fluid {
+      background-color:black;
+      overflow:hidden;
+      color:white;
+    }
+    
+    
+    .popularItemsContainer.container-fluid {
+      background: url(https://images.pexels.com/photos/978249/pexels-photo-978249.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat center/100%;
+    }
+    
+    
+    .popularItems .btn {
+     width: 100%;
+     background: rgba(30, 52, 255, 0.5);
+     margin-bottom:5%;
+     color:white;
+    }
+    
+    .popularItems .btn:hover {
+      background-color:black;
+      color:white;
+    }
+    
+    #recallBanner p {
+      margin:2% auto;
+      padding:1%;
+      display:inline-block;
+      text-align:center;
+      color: black;
+      border: 1px solid black;
+    }
+    
+    .selected{
+      background-color: darkgreen !important;
+    }
+    
+    #bestService {
+      font-size:2.2em;
+      font-style:italic;
+      font-family: HalfordsVeneerII-Regular;
+      font-weight:700;
+      margin-top:3%;
+      
+    }
+    
+    #bestServiceBike {
+      background: url(https://cdn.pixabay.com/photo/2016/11/22/18/50/bicycle-1850008_960_720.jpg) no-repeat;
+    }
+    
+    #bestServiceCar {
+      background: 
+        url(https://cdn.pixabay.com/photo/2018/09/20/22/23/auto-repair-3691962_960_720.jpg) right no-repeat;
+    }
+    
+    .col-6 a:hover {
+      text-decoration: none;
+    }
+    
+    .serviceContent p{
+      font-weight:600;
+    }
+    
+    #fix {
+      color:white;
+      text-align:center;
+      font-size:1.2em
+    }
+    
+    #fix a{
+      text-decoration:none;
+      color:inherit;
+    }
+    
+    #fix .btn {
+      margin-bottom:10%;
+    }
+    
+    
+    #fixCar{
+      background: url(https://cdn.pixabay.com/photo/2018/10/20/14/14/mercedes-3760878_1280.jpg) 50% 37%;
+    }
+    
+    #fixDashcam{
+      background:url(https://images.pexels.com/photos/533562/pexels-photo-533562.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    }
+    
+    #fixBike{
+      background:url(https://images.pexels.com/photos/2317551/pexels-photo-2317551.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) 50% 30%;
+    }
+    
+    #about li {
+      list-style:none
+    }
+    
+    #about .btn{
+      width:100%;
+      margin:3%;
+    }
+    
+    .footer-container {
+      background-color:#282B28;
+      color:white;
+    }
+    
+    footer ul {
+      list-style:none;
+      padding-left:0;
+      color:inherit;
+      white-space:nowrap;
+    }
+    
+    footer h6{
+      color:orange;
+      padding:0;
+    }
+    
+    .footer-links{
+      background-color:#323232;
+      color:white;
+    }
+    
+    .footer-links ul {
+      padding:2% 0;
+      list-style:none;
+    }
+    
+    .footer-links ul li{
+      display:inline;
+      padding-right:3%;
+      position:relative;
+      left:19%;
+    }
